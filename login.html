@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="login_estilo.css">
+
+</head>
+<body>
+    <header style="display: flex; align-items: center; justify-content: center; padding: 10px;">
+            <img src="imagenes/LogoRelojeria.png" alt="Logo" style="width: 100px; height: 100px;">
+            <h1 id="cronos">CRONOS</h1>
+    </header>
+    <div class="contenedor">
+    <div class="wrapper">
+        <form action="procesar_login.php" method="POST">
+            <h1>Iniciar sesión</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Usuario" name="usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">   
+                <input type="password" placeholder="Contraseña" name="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn">Ingresar</button>
+        
+            <div class="register-link">
+                <p>¿No tienes una cuenta? <a href="register.html">Regístrate</a></p>
+            </div>
+            
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>
