@@ -31,7 +31,7 @@
             <li><a href="#">Contacto</a></li>
         </ul>
     </div>
-    <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+    <header>
         
         <div class="search-container" style="display: flex; align-items: center; margin-left: 70px;">
             <img src="imagenes/buscar.png" alt="Buscar.icon" style="width: 50px; cursor: pointer;">
@@ -46,7 +46,7 @@
             <img src="imagenes/LogoRelojeria.png" alt="Logo" style="width: 100px; height: 100px; margin-left: 200px;">
             <h2 style="color:aliceblue">CRONOS</h2>
         </div>
-        <div style="display: flex; align-items: center;"> 
+        <div id="user-container" style="display: flex; align-items: center; margin-right: 50px;"> 
             <a href="login.html">
                 <img src="imagenes/usuario.png" id="icono_user" alt="User Icon" style="width: 40px; height: 40px; cursor: pointer;">
             </a>
@@ -58,7 +58,7 @@
                 <i class="fa-solid fa-heart"></i>
                 <span class="counter-favorite">0</span>
             </button>
-            <button>
+            <button id="button-header-cart">
                 <i class="fa-solid fa-bag-shopping"></i>
                 <span class="counter-cart">0</span>
             </button>
@@ -74,6 +74,17 @@
                     <p class="title">Audífonos Bluetooth Pro</p>
                     <p>$150</p>
                 </div>
+            </div>
+        </div>
+
+        <div class="container-list-cart">
+            <div class="header-cart">
+                <h3>Mi Carrito</h3>
+                <i class="fa-solid fa-xmark" id="btn-close-cart"></i>
+            </div>
+            
+            <div class="list-cart">
+                <p class="empty-message">El carrito está vacío</p>
             </div>
         </div>
     </header>
@@ -146,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card-product" data-product-id="1">
+                <div class="content-card-product" data-product-id="1" data-product-type="Reloj de Caballero">
                     <h3>Rolex Submariner</h3>
                     <p>El icónico reloj de buceo con un diseño robusto y elegante.</p>
                     <div class="footer-card-product">
@@ -185,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card-product" data-product-id="2">
+                <div class="content-card-product" data-product-id="2" data-product-type="Reloj de Mujer">
                     <h3>Rolex Lady-Datejust</h3>
                     <p>Un clásico atemporal con un diseño elegante, perfecto para cualquier ocasión.</p>
                     <div class="footer-card-product">
@@ -224,7 +235,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card-product" data-product-id="3">
+                <div class="content-card-product" data-product-id="3" data-product-type="Reloj de Caballero">
                     <h3>Seiko Prospex Diver</h3>
                     <p>Reloj de buceo robusto y accesible para aventureros.</p>
                     <div class="footer-card-product">
@@ -263,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card-product" data-product-id="4">
+                <div class="content-card-product" data-product-id="4" data-product-type="Reloj de Mujer">
                     <h3>Omega Constellation</h3>
                     <p>Reloj elegante con detalles en oro rosa y un diseño sofisticado.</p>
                     <div class="footer-card-product">
@@ -302,7 +313,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card-product" data-product-id="5">
+                <div class="content-card-product" data-product-id="5" data-product-type="Reloj de Caballero">
                     <h3>Omega Speedmaster Moonwacth</h3>
                     <p>El legendario reloj utilizado en buenos momentos.</p>
                     <div class="footer-card-product">
@@ -341,7 +352,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card-product" data-product-id="6">
+                <div class="content-card-product" data-product-id="6" data-product-type="Reloj de Mujer">
                     <h3>Cartier Ballon Bleu</h3>
                     <p>Elegancia y lujo en un diseño redondeado con el icónico cabujón rosa.</p>
                     <div class="footer-card-product">
@@ -380,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card-product" data-product-id="7">
+                <div class="content-card-product" data-product-id="7" data-product-type="Reloj de Caballero">
                     <h3>Cartier Santos</h3>
                     <p>Elegancia atemporal y versatilidad con correas intercambiables.</p>
                     <div class="footer-card-product">
@@ -458,7 +469,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-card-product" data-product-id="9">
+                <div class="content-card-product" data-product-id="4" data-product-type="Reloj de Mujer">
                     <h3>Breitling Navitimer</h3>
                     <p>Un reloj icónico para los pilotos, con funciones avanzadas y un diseño clásico.</p>
                     <div class="footer-card-product">

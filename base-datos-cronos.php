@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "cronos";
-$port = 3307;
+$port = 3306;
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, null, $port);
