@@ -19,27 +19,27 @@
         <form action="procesar_Register.php" method="POST">
             <h1>Resgistrate ahora</h1>
             <div class="input-box">
-                <input type="text" placeholder="Correo Electronico" name="register_usuario" required>
+                <input type="email" placeholder="Correo Electronico" name="correo" required>
                 <i class='bx bxs-envelope'></i>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Nombre" name="register_usuario" required>
+                <input type="text" placeholder="Nombre" name="nombre" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">   
-                <input type="password" placeholder="Contraseña" name="register_password" required>
+                <input type="password" placeholder="Contraseña" name="password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
             <div class="input-box">   
-                <input type="password" placeholder="Confirmar Contraseña" name="register_password" required>
+                <input type="password" placeholder="Confirmar Contraseña" name="password_confirm" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Direccion" name="register_usuario" required>
+                <input type="text" placeholder="Direccion" name="direccion" required>
                 <i class='bx bxs-map-pin'></i>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Telefono" name="register_usuario" required>
+                <input type="text" placeholder="Telefono" name="telefono" required>
                 <i class='bx bxs-phone'></i>
             </div>
             <div class="input-box">
@@ -49,20 +49,11 @@
             <div class="input-box">
                 <select name="genero" required>
                     <option value="">Seleccione Género</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                    <option value="otro">Otro</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="O">Otro</option>
                 </select>
                 <i class='bx bxs-user-detail'></i>
-            </div>
-            <div class="input-box">
-                <select name="metodo_pago" required>
-                    <option value="">Seleccione Método de Pago</option>
-                    <option value="tarjeta_credito">Tarjeta de Crédito</option>
-                    <option value="tarjeta_debito">Tarjeta de Débito</option>
-                    <option value="paypal">PayPal</option>
-                </select>
-                <i class='bx bxs-credit-card'></i>
             </div>
             <button type="submit" class="btn">Registrarse</button>
             
